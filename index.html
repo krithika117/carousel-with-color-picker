@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carousel Example</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <h3>First Slide</h3> &nbsp;
+
+                <input type="color" class="color-picker" onchange="changeSlideColor(this)">
+            </div>
+            <div class="carousel-item">
+                <h3>Second Slide</h3> &nbsp;
+                <input type="color" class="color-picker" onchange="changeSlideColor(this)">
+            </div>
+            <div class="carousel-item">
+                <h3>Third Slide</h3> &nbsp;
+                <input type="color" class="color-picker" onchange="changeSlideColor(this)">
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-controls">
+        <button onclick="prevSlide()">⬅️</button>
+        <button onclick="nextSlide()">➡️</button>
+    </div>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
